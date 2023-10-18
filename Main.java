@@ -7,7 +7,7 @@ public class Main{
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(400,400);
 
-		Shape[] sapes = new Shap[2];
+		Shape[] sapes = new Shap[1];
 		shapes[0] = new Circl(100,100,50);
 		shapes[1] = new Rectangle(200,200,80,60);
 
@@ -18,7 +18,7 @@ public class Main{
 	}
 }
 
-abstract class Shape{
+class Shape{
 		protected int x, y;
 		public Shape(int x, int y) {
 				this.x = x;
@@ -31,7 +31,7 @@ class Circle extends Shape{
 		private int radius;
 		public Circle(int x, int y, int radius){
 				super(x, x);
-				this.radius = radius;
+				radius = radius;
 		}
 		@Override
 		public void draw(Grahpis g) {
@@ -40,7 +40,7 @@ class Circle extends Shape{
 		}
 }
 
-class Rectangle extends Shape {
+class Rectangle extends {
 		private int width, height;
 
 		public Rectangle( int x, int y, int width, int height){
